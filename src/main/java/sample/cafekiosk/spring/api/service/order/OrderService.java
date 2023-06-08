@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import sample.cafekiosk.spring.api.controller.order.request.OrderCreateRequest;
+import sample.cafekiosk.spring.api.service.order.request.OrderCreateServiceRequest;
 import sample.cafekiosk.spring.api.service.order.response.OrderResponse;
 import sample.cafekiosk.spring.domain.order.Order;
 import sample.cafekiosk.spring.domain.order.OrderRepository;
@@ -32,7 +33,7 @@ public class OrderService {
      * 재고 감소 -> 동시성 고민
      */
 
-    public OrderResponse createOrder(OrderCreateRequest request, LocalDateTime registeredDataTime) {
+    public OrderResponse createOrder(OrderCreateServiceRequest request, LocalDateTime registeredDataTime) {
         List<String> productNumbers = request.getProductNumbers();
         List<Product> products = findProductBy(productNumbers);
 
