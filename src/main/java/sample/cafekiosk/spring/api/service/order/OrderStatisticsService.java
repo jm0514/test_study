@@ -2,7 +2,7 @@ package sample.cafekiosk.spring.api.service.order;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import sample.cafekiosk.spring.api.service.mail.MailService;
+import sample.cafekiosk.spring.api.service.order.mail.MailService;
 import sample.cafekiosk.spring.domain.order.Order;
 import sample.cafekiosk.spring.domain.order.OrderRepository;
 import sample.cafekiosk.spring.domain.order.OrderStatus;

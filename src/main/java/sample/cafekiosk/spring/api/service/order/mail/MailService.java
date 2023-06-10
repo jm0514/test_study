@@ -1,4 +1,4 @@
-package sample.cafekiosk.spring.api.service.mail;
+package sample.cafekiosk.spring.api.service.order.mail;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
