@@ -1,5 +1,5 @@
 ifndef::snippets[]
-:snippets: ../../build/generated-snippets
+:snippets: build/generated-snippets
 endif::[]
 = CafeKiosk REST API 문서
 :doctype: book
@@ -22,8 +22,5 @@ include::{snippets}/product-create/request-fields.adoc[]
 === HTTP Response
 include::{snippets}/product-create/http-response.adoc[]
 include::{snippets}/product-create/response-fields.adoc[]
-
-[[Product-API]]
-== Product API
 
 include::api/product/product.adoc[]
